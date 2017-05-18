@@ -9,7 +9,7 @@ In file included from order.h:7:0,
 customer.h:32:8: note: void Customer::setAddress(Address&)
    void setAddress(Address &address)
         ^
-customer.h:32:8: note:   no known conversion for argument 1 from ‘Address’ to ‘Add                                                                                                                       ress&’
+customer.h:32:8: note:   no known conversion for argument 1 from ‘Address’ to ‘Address&’
 In file included from order.cpp:3:0:
 order.h: In member function ‘void Order::setCustomer(Customer&)’:
 order.h:39:51: error: no matching function for call to ‘Customer::setAddress(Address)’
@@ -21,7 +21,7 @@ In file included from order.h:7:0,
 customer.h:32:8: note: void Customer::setAddress(Address&)
    void setAddress(Address &address)
         ^
-customer.h:32:8: note:   no known conversion for argument 1 from ‘Address’ to ‘Add                                                                                                                       ress&’
+customer.h:32:8: note:   no known conversion for argument 1 from ‘Address’ to ‘Address&’
 In file included from assign05.cpp:16:0:
 order.h: In constructor ‘Order::Order(Product&, int, Customer&)’:
 order.h:25:51: error: no matching function for call to ‘Customer::setAddress(Addre ss)’
